@@ -47,7 +47,7 @@ exports[`<App /> should render App component 1`] = `
         data-testid="button"
         type="button"
       >
-        New joke
+        New locale
       </button>
     </div>
   </div>

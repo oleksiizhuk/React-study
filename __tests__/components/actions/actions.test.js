@@ -2,7 +2,7 @@ import i18n from 'i18next';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 
-import { TOGGLE_LOCALE, DELETE_LOCALE } from '../../../src/components/constants/actionTypes';
+import { TOGGLE_LOCALE, DELETE_LOCALE } from '../../../src/components/store/locale/types';
 import { toggleLocale, deleteLocale, changeLanguage } from '../../../src/components/store/locale/actions';
 
 describe('actions', () => {

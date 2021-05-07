@@ -49,4 +49,5 @@ Home.propTypes = {
   t: PropTypes.func.isRequired,
 };
 
+export { Home };
 export default connect(mapStateToProps, mapDispatchToProps)(withTranslation()(Home));

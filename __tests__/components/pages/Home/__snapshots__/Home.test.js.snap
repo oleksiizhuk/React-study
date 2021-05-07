@@ -16,7 +16,7 @@ exports[`<Home /> should render Home component 1`] = `
       data-testid="button"
       type="button"
     >
-      New joke
+      New locale
     </button>
   </div>
 </DocumentFragment>
