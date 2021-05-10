@@ -4,6 +4,8 @@ import { createBrowserHistory } from 'history';
 import Page from './components/layout/Page/Page';
 import HomePage from './components/pages/Home/Home';
 import About from './components/pages/About/About';
+import BasicForm from './components/pages/BasicFormik/BasicForm';
+import ExampleUseFormik from './components/pages/ExampleUseFormik/ExampleUseFormik';
 import './scss/globals.scss';
 
 class App extends Component {
@@ -19,6 +21,8 @@ class App extends Component {
           <Switch>
             <Route exact strict path="/" component={HomePage} />
             <Route exact strict path="/about" component={About} />
+            <Route exact strict path="/basicFormik" component={BasicForm} />
+            <Route exact strict path="/exampleUseFormik" component={ExampleUseFormik} />
           </Switch>
         </Page>
       </Router>
