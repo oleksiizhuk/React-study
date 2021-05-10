@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "formik": "^2.2.6",
     "history": "4.10.1",
     "i18next": "^19.8.4",
     "i18next-browser-languagedetector": "^6.0.1",
@@ -17,7 +18,8 @@
     "react-scripts": "4.0.1",
     "redux": "^4.0.5",
     "redux-mock-store": "^1.5.4",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "yup": "^0.32.9"
   },
   "scripts": {
     "prestart": "eslint . --max-warnings=0",

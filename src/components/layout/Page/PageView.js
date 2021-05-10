@@ -9,8 +9,6 @@ export default function PageView({ children }) {
   return (
     <div className={styles.app}>
       <Header
-        home={t('home')}
-        about={t('about')}
         message={t('welcome')}
       />
       {children}

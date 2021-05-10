@@ -1,13 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './button.module.scss';
 
-const Button = ({ title, buttonClass, handleClick }) => {
+const Button = ({
+  title, styleButton, onClick, disabled
+}) => {
   return (
     <button
       type="button"
-      onClick={handleClick}
-      className={buttonClass}
+      onClick={onClick}
+      className={`${styles.button} ${styleButton} ${disabled && styles.disabledButton}`}
       data-testid="button"
+      disabled={disabled}
     >
       { title }
     </button>
@@ -15,8 +19,15 @@ const Button = ({ title, buttonClass, handleClick }) => {
 };
 
 Button.propTypes = {
+  disabled: PropTypes.bool,
   title: PropTypes.string.isRequired,
-  buttonClass: PropTypes.string.isRequired,
-  handleClick: PropTypes.func.isRequired
+  styleButton: PropTypes.string,
+  onClick: PropTypes.func.isRequired
 };
+
+Button.defaultProps = {
+  disabled: false,
+  styleButton: ''
+};
+
 export default Button;
