@@ -10,47 +10,46 @@ import { signIn } from '../../store/user/actions';
 const ExampleUseFormikView = () => {
   const dispatch = useDispatch();
   const {
-    values, handleBlur, handleChange, errors, touched, isValid, dirty, handleSubmit, isSubmitting
+    values,
+    errors,
+    touched,
+    isValid,
+    dirty,
+    isSubmitting,
+    handleBlur,
+    handleChange,
+    handleSubmit,
+    status,
   } = useFormik({
     initialValues: {
       userName: '',
       email: '',
-      age: null,
       password: ''
     },
     validationSchema,
     onSubmit: (val, formikHelpers) => dispatch(signIn(val, formikHelpers))
   });
-
   return (
     <div className={styles.container}>
-      <div className={styles.form}>
+      <div className={styles.formWrapper}>
+        {status?.done && <p className={styles.title}>{status.done}</p>}
         <Input
+          onChange={handleChange}
+          onBlur={handleBlur}
           labelHtmlFor="userName"
           labelText="User name"
           name="userName"
-          onChange={handleChange}
           value={values.userName}
-          onBlur={handleBlur}
           errors={errors.userName && touched.userName && errors.userName}
         />
         <Input
+          onChange={handleChange}
+          onBlur={handleBlur}
           labelHtmlFor="email"
           labelText="Email"
           name="email"
           value={values.email}
-          onChange={handleChange}
-          onBlur={handleBlur}
           errors={errors.email && touched.email && errors.email}
-        />
-        <Input
-          labelHtmlFor="age"
-          labelText="Age"
-          name="age"
-          value={values.age}
-          onChange={handleChange}
-          onBlur={handleBlur}
-          errors={errors.age && touched.age && errors.age}
         />
         <Input
           labelHtmlFor="password"
