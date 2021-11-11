@@ -23,6 +23,15 @@ const Header = () => {
       <Link to="/exampleUseFormik" className={styles.headerLink}>
         {t('exampleUseFormik')}
       </Link>
+      <Link to="/linkedList" className={styles.headerLink}>
+        {t('linkedList')}
+      </Link>
+      <Link to="/UseMemo" className={styles.headerLink}>
+        {t('usememo')}
+      </Link>
+      <Link to="/BinaryTree" className={styles.headerLink}>
+        {t('BinaryTree')}
+      </Link>
       <button
         className={styles.toggleLanguage}
         data-testid="toggle-language-button"
