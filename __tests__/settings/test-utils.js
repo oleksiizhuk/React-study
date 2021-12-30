@@ -6,7 +6,7 @@ import { Router } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { createBrowserHistory } from 'history';
 import i18n from '../../src/i18n';
-import reduxStore from '../../src/components/store/configureStore';
+import reduxStore from '../../src/store/configureStore';
 
 function render(
   ui,

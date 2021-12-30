@@ -1,7 +1,7 @@
 import React from 'react';
 import fetchMock from 'jest-fetch-mock';
 import { render } from '../../../settings/test-utils';
-import HomePage, { Home as HomeComponent } from '../../../../src/components/pages/Home/Home';
+import HomePage, { Home as HomeComponent } from '../../../../src/pages/Home/Home';
 
 describe('<Home />', () => {
   let wrapper;

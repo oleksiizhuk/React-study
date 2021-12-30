@@ -2,8 +2,8 @@ import i18n from 'i18next';
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
 
-import { TOGGLE_LOCALE, DELETE_LOCALE } from '../../../src/components/store/locale/types';
-import { toggleLocale, deleteLocale, changeLanguage } from '../../../src/components/store/locale/actions';
+import { TOGGLE_LOCALE, DELETE_LOCALE } from '../../../src/store/locale/types';
+import { toggleLocale, deleteLocale, changeLanguage } from '../../../src/store/locale/actions';
 
 describe('actions', () => {
   const middlewares = [thunk];

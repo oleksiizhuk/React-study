@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '../../../settings/test-utils';
-import Title from '../../../../src/components/elements/Title/Title';
+import Title from '../../../../src/component/Title/Title';
 
 describe('<Title />', () => {
   test('should render Title component', () => {

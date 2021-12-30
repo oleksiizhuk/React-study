@@ -1,6 +1,6 @@
 import i18n from 'i18next';
-import reducers, { initialState } from '../../../src/components/store/locale/reducers';
-import { toggleLocale } from '../../../src/components/store/locale/actions';
+import reducers, { initialState } from '../../../src/store/locale/reducers';
+import { toggleLocale } from '../../../src/store/locale/actions';
 import { resources } from '../../../src/i18n';
 
 describe('translate reducer', () => {

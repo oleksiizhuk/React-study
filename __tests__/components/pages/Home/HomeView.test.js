@@ -2,7 +2,7 @@ import React from 'react';
 import userEvent from '@testing-library/user-event';
 import i18next from 'i18next';
 import { render } from '../../../settings/test-utils';
-import HomeView from '../../../../src/components/pages/Home/HomeView';
+import HomeView from '../../../../src/pages/Home/HomeView';
 
 describe('<HomeView />', () => {
   let wrapper;

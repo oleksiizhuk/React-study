@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '../../../settings/test-utils';
-import PageView from '../../../../src/components/layout/Page/PageView';
+import PageView from '../../../../src/layout/Page/PageView';
 
 describe('<PageView />', () => {
   let wrapper;

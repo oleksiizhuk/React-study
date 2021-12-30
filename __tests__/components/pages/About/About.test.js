@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '../../../settings/test-utils';
-import About from '../../../../src/components/pages/About/About';
+import About from '../../../../src/pages/About/About';
 
 describe('About />', () => {
   test('should render About component', () => {

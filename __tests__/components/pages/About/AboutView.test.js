@@ -1,7 +1,7 @@
 import React from 'react';
 import i18next from 'i18next';
 import { render } from '../../../settings/test-utils';
-import AboutView from '../../../../src/components/pages/About/AboutView';
+import AboutView from '../../../../src/pages/About/AboutView';
 
 describe('<AboutView />', () => {
   let wrapper;

@@ -2,7 +2,7 @@ import React from 'react';
 import userEvent from '@testing-library/user-event';
 import i18n from 'i18next';
 import { render } from '../../../settings/test-utils';
-import Header from '../../../../src/components/layout/Header/Header';
+import Header from '../../../../src/layout/Header/Header';
 
 describe('<Header />', () => {
   let wrapper;

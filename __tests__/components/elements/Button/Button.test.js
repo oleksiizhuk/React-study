@@ -1,7 +1,7 @@
 import React from 'react';
 import userEvent from '@testing-library/user-event';
 import { render } from '../../../settings/test-utils';
-import Button from '../../../../src/components/elements/Button/Button';
+import Button from '../../../../src/component/Button/Button';
 
 describe('<Button />', () => {
   let wrapper;

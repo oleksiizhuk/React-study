@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from '../../../settings/test-utils';
-import Film from '../../../../src/components/elements/Film/Film';
+import Film from '../../../../src/component/Film/Film';
 
 describe('<Film />', () => {
   let wrapper;

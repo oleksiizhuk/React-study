@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from '../../../settings/test-utils';
-import Page from '../../../../src/components/layout/Page/Page';
-import PageView from '../../../../src/components/layout/Page/PageView';
+import Page from '../../../../src/layout/Page/Page';
+import PageView from '../../../../src/layout/Page/PageView';
 
 describe('<Page />', () => {
   let wrapper;
