@@ -38,6 +38,9 @@ const Header = () => {
       <Link to="/UseCallBackUseMemo" className={styles.headerLink}>
         {t('UseCallBackUseMemo.js')}
       </Link>
+      <Link to="/UseEffect" className={styles.headerLink}>
+        {t('UseEffect')}
+      </Link>
       <button
         className={styles.toggleLanguage}
         data-testid="toggle-language-button"

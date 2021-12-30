@@ -10,6 +10,7 @@ import LinkedList from './pages/LinkedList/LinkedList';
 import BinaryTree from './pages/BinaryTree/BinaryTree';
 import Grid from './pages/Grid/Grid';
 import UseCallBackUseMemo from './pages/UseCallBackUseMemo/UseCallBackUseMemo';
+import UseEffect from './pages/UseEffect/UseEffect';
 
 import './scss/globals.scss';
 
@@ -32,6 +33,7 @@ class App extends Component {
             <Route exact strict path="/BinaryTree" component={BinaryTree} />
             <Route exact strict path="/Grid" component={Grid} />
             <Route exact strict path="/UseCallBackUseMemo" component={UseCallBackUseMemo} />
+            <Route exact strict path="/UseEffect" component={UseEffect} />
           </Switch>
         </Page>
       </Router>
